@@ -1,6 +1,8 @@
 # Proyecto de Aprendizaje: Tecnologías que Aprender
 
-![Tecnologías que Aprender](imagen.jpg)
+![Tecnologías que Aprender](TecnologiasParaAprender.jpg)
+
+![Tecnologías que Aprender](TecnologiasParaAprender_Movil.jpg)
 
 ¡Bienvenido a mi proyecto "Tecnologías que Aprender"! Este proyecto tiene como objetivo proporcionar información esencial sobre las tecnologías que debes considerar aprender en el mundo de la tecnología y el desarrollo.
 
