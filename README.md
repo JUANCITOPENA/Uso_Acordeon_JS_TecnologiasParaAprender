@@ -26,4 +26,4 @@ Espero que encuentres este proyecto útil y te ayude a tomar decisiones informad
 
 Gracias por visitar "Tecnologías que Aprender".
 
-[Ver el proyecto en GitHub](enlace-al-repositorio)
+[Ver el proyecto en GitHub Pages](https://juancitopena.github.io/Uso_Acordeon_JS_TecnologiasParaAprender/)
