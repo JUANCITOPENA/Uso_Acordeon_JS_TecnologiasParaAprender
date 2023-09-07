@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+/* Establece el tamaño de fuente base y el color de fondo del body */
+/* Establece el tamaño de fuente base y el color de fondo del body */
+body {
+  background-color: #0A2344;
+  font-family: 'Rubik', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centra verticalmente los elementos */
+  align-items: center; /* Centra horizontalmente los elementos */
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  border-radius: 10px; /* Esto redondeará los bordes del contenedor */
+  /* Opcional: Puedes agregar sombra para dar más efecto de profundidad */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo para el título h1 */
+h1 {
+  text-align: center;
+  margin: 40px 0;
+  color: rgb(234, 45, 7); /* Cambia el color del texto a blanco */
+}
+.foto {
+  border: 3px solid red;
+  border-top: 5px solid orange;
+  border-bottom: 5px solid rgb(85, 221, 12);
+  border-radius: 50%;
+  background: url(imagenes/paper.gif);
+  background-position: left top;
+  background-repeat: repeat;
+  padding: 1px;
+  width: 150px;
+  height: 150px;
+}
+
+/* Establece estilos generales para el acordeón */
+.accordion {
+  width: 100%; /* Cambia el ancho al 100% para que sea responsive */
+  max-width: 800px; /* Establece un ancho máximo para evitar que se expanda demasiado */
+  color: black;
+  background-color: white;
+  padding: 20px; /* Reduce el relleno para un diseño más limpio */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Agrega una sombra suave */
+  margin: 20px 0; /* Aumenta el espacio entre acordeones */
+}
+
+/* Establece estilos para cada contenedor de acordeón */
+.accordion .container {
+  margin: 10px 0; /* Aumenta el espacio entre contenedores de acordeón */
+  margin-left: 0 auto !important;
+  margin-right: 0 auto !important;
+}
+
+/* Estilos para la etiqueta del acordeón */
+.accordion .label {
+  position: relative;
+  padding: 10px 0;
+  font-size: 25px;
+  color: black;
+  cursor: pointer;
+}
+
+/* Estilos para el ícono de expandir/cerrar */
+.accordion .label::before {
+  content: '+';
+  color: black;
+  position: absolute;
+  top: 50%;
+  right: -5px;
+  font-size: 25px;
+  transform: translateY(-50%);
+}
+
+/* Establece estilos para el contenido del acordeón */
+.accordion .content {
+  position: relative;
+  background: white;
+  font-size: 16px;
+  text-align: justify;
+  max-width: 100%; /* Evita que el contenido se desborde */
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out; /* Usa max-height para animar la altura */
+  max-height: 0; /* Inicialmente, el contenido está oculto */
+  margin-left: 0 auto !important;
+  margin-right: 0 auto !important;
+}
+
+/* Estilos para la línea divisoria */
+.accordion hr {
+  width: 100%;
+  margin: 10px 0; /* Aumenta el espacio entre líneas divisorias */
+  border: 1px solid grey;
+}
+
+/* Establece estilos para el contenido activo del acordeón */
+.accordion .container.active .content {
+  max-height: none; /* Muestra el contenido activo */
+}
+
+
+/* Cambia el ícono a "-" cuando el acordeón está activo */
+.accordion .container.active .label::before {
+  content: '-';
+  font-size: 30px;
+}
